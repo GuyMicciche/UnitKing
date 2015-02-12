@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:padding="16dip">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Glucose Level:"
+        android:textSize="22sp" />
+    <EditText
+        android:id="@+id/current"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="22sp" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Target Glucose Level:"
+        android:textSize="22sp" />
+    <EditText
+        android:id="@+id/target"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="22sp" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Carbohydrates:"
+        android:textSize="22sp" />
+    <EditText
+        android:id="@+id/carbohydrates"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="22sp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_marginTop="16dip">
+        <TextView
+            android:text="Suggested Units:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/suggested"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="26sp"
+            android:layout_marginLeft="16dip" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_gravity="right" />
+</LinearLayout>
